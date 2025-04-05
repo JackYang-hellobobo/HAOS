@@ -17,9 +17,9 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: hub.docker.com
+  REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{jackyanghellobobo/jachaos}}
+  IMAGE_NAME: ${{jachaos}}
 
 
 jobs:
