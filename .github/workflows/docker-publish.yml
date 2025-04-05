@@ -17,9 +17,9 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: docker.io
+  REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: jackyanghellobobo/jachaos
+  IMAGE_NAME: jackyang-hellobobo/jachaos
 
 
 jobs:
@@ -58,8 +58,8 @@ jobs:
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
         with:
           registry: ${{ env.REGISTRY }}
-          username: jackyanghellobobo
-          password: $dckr_pat_HreUqobxsm6EO8ZQdOfiSBfL94c
+          username: jackyang-hellobobo
+          password: ${{CR_PAT}}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
